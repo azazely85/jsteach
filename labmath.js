@@ -16,7 +16,7 @@ for (var i in a){
 console.log(b);
 var a = [5, 45, 3, 100];
 var b = Math.min.apply(Math,a);
-console.log(b);
+clg(b);
 //Math.min(5, 45, 3, 100);
 //Math.max(5, 45, 3, 100);
 // console.log(Math.PI);
