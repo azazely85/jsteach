@@ -4,8 +4,10 @@
 var user ={
     "name":"John",
     "age":"25",
-    "admin":true
-}
+    "admin":true,
+    say:function (word) {console.log(word+" from "+this.name)}
+};
+user.say("Hello");
 for(var i in user){
     console.log(user[i]);
 }
