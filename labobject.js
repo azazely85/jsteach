@@ -1,28 +1,61 @@
 /**
  * Created by Пользователь on 13.07.2016.
  */
-var book1={
-    title:"Dorian",
-    pubYear:1985,
-    price:105,
-    show:function () {
-        console.log(this.title + " - "+this.price)
+//
+var o = {
+    param:10,
+    method: function () {
+        var self = this;
+        function test() {
+            console.log(self.param)
+        }
+        test();
     }
 };
-function showBook() {
-    console.log(this.title + " - "+this.price)
-}
-var book2={
-    title:"Dorianin",
-    pubYear:1885,
-    price:18,
-    show:showBook
-};
-// for(var i in book1){
-//      console.log(book1[i]);
+o.method();
+// function some(){
+//     console.log(this.age)
 // }
-book1.show();
-book2.show();
+
+// var john = {
+//     "name": "John",
+//     say: function (word) {
+//         console.log(word + " from " + this.name);
+//     }
+// };
+// var age=10;
+// some();
+// var mike={
+//     name:"Mike",
+//     age:100
+// };
+// some.call(mike);
+// mike.x=john.say;
+// mike.x("Hello");
+// /*Lab start*/
+// var book1={
+//     title:"Dorian",
+//     pubYear:1985,
+//     price:105,
+//     show:function () {
+//         console.log(this.title + " - "+this.price)
+//     }
+// };
+// function showBook() {
+//     console.log(this.title + " - "+this.price)
+// }
+// var book2={
+//     title:"Dorianin",
+//     pubYear:1885,
+//     price:18,
+//     show:showBook
+// };
+// // for(var i in book1){
+// //      console.log(book1[i]);
+// // }
+// book1.show();
+// book2.show();
+// /*Lab end*/
 // function same() {
 //     console.log(this.age)
 // }
