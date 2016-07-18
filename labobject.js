@@ -1,17 +1,51 @@
 /**
  * Created by Пользователь on 13.07.2016.
  */
-var user ={
-    "name":"John",
-    "age":"25",
-    "admin":true,
-    say:function (word) {console.log(word+" from "+this.name)}
+var book1={
+    title:"Dorian",
+    pubYear:1985,
+    price:105,
+    show:function () {
+        console.log(this.title + " - "+this.price)
+    }
 };
-user.say("Hello");
-for(var i in user){
-    console.log(user[i]);
+function showBook() {
+    console.log(this.title + " - "+this.price)
 }
-
+var book2={
+    title:"Dorianin",
+    pubYear:1885,
+    price:18,
+    show:showBook
+};
+// for(var i in book1){
+//      console.log(book1[i]);
+// }
+book1.show();
+book2.show();
+// function same() {
+//     console.log(this.age)
+// }
+// var user ={
+//     "name":"John",
+//     "age":"25",
+//     "admin":true,
+//     say:function (word) {
+//         console.log(word+" from "+this.name);
+//         this.foo()
+//     },
+//     foo:same
+// };
+// user.say("Hello");
+// for(var i in user){
+//     console.log(user[i]);
+// }
+//
+// var user1={
+//     age:35,
+//     foo:same
+// }
+// console.log(user1.foo());
 // var user ={
 //     0:"a",
 //     1:"b",
