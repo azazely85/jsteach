@@ -1,21 +1,25 @@
 /**
  * Created by Пользователь on 13.07.2016.
  */
-//
-var o = {
-    param:10,
-    method: function () {
-        var self = this;
-        function test() {
-            console.log(self.param)
-        }
-        test();
-    }
-};
-o.method();
-// function some(){
-//     console.log(this.age)
-// }
+// //
+// var o = {
+//     param:10,
+//     method: function () {
+//         var self = this;
+//         function test() {
+//             console.log(self.param)
+//         }
+//         test();
+//     }
+// };
+// o.method();
+function some(a,b){
+    console.log(this.age)
+console.log(some.length);
+    console.log(arguments.length);
+    console.log(arguments[2]);
+
+}
 
 // var john = {
 //     "name": "John",
@@ -24,12 +28,12 @@ o.method();
 //     }
 // };
 // var age=10;
-// some();
-// var mike={
-//     name:"Mike",
-//     age:100
-// };
-// some.call(mike);
+//some();
+var mike={
+    name:"Mike",
+    age:100
+};
+some.call(mike,10,20,105);
 // mike.x=john.say;
 // mike.x("Hello");
 // /*Lab start*/
