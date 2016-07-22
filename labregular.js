@@ -5,6 +5,7 @@ var s="Something wrong before this nothing";
 var x =s.split(" ");
 var z = s.replace("wrong","bad");
 s="vasiliy@mail.ru";
+clg(z);
 z=s.match(/([a-z]+)@([a-z]+)\.([a-z]{2,})/i);//return null if no regular
 clg(z);
 var regular =/@/;
