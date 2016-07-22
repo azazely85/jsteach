@@ -14,6 +14,7 @@ clg(s.concat(" ", "world"));
 clg(s.toLowerCase());
 clg(s.toUpperCase());
 clg(s.charAt(1));
+
 var s2=s.charCodeAt(1);
 clg(s.charCodeAt(1));
 clg(String.fromCharCode(s2));
