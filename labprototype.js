@@ -9,7 +9,7 @@ function User(name,age) {
 var u1 = new User("John",25);
 u1.admin = true;
 var u2= new User("Mike",33);
-//clg(u1.constructor);
+clg(u1.constructor);
 var n1= new Number(10);
 u1.toString();
 User.prototype.x=10;
@@ -32,3 +32,14 @@ Number.prototype.pow= function (x) {
 return Math.pow(this.valueOf(),x);
 };
 n.pow(10);
+
+function Book(title,pubYear,price) {
+    this.title=title;
+    this.pubYear=pubYear;
+    this.price=price;
+}
+var porter = new Book("Porter",2010,150);
+Book.prototype.show=function(){
+    clg(this.title,this.price);
+}
+porter.show();
